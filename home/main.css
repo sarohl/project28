@@ -2,6 +2,9 @@ a {
     text-decoration: none;
     color: black;
   }
+
+
+  /* Navigation bar starts here*/
   .navbar {
     display: flex;
     justify-content: space-between;
@@ -26,4 +29,11 @@ a {
   }
   .navbar ul li {
     padding: 20px;
+  }
+
+  /* Navigation bar ends here*/
+
+  .hotel {
+    border-radius: 50%;
+    
   }
