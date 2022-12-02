@@ -7,11 +7,11 @@
 }
 
 .left-col {
-  flex-basis: 70%;
+  flex-basis: 55%;
   margin-left: 5%;
 }
 .right-col {
-  flex-basis: 25%;
+  flex-basis: 35%;
 }
 
 .left-col h1 {
@@ -59,6 +59,7 @@
   color: #333;
   font-size: 22px;
   margin: 4px 0;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .activites-info i {
@@ -84,8 +85,10 @@ p {
   font-family: Arial, Helvetica, sans-serif;
 }
 .activites-text {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Times New Roman", Times, serif;
+  font-size: large;
   width: 800px;
+  letter-spacing: 0.2px;
 }
 
 /* * {
