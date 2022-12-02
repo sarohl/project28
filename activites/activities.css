@@ -83,6 +83,10 @@
 p {
   font-family: Arial, Helvetica, sans-serif;
 }
+.activites-text {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 800px;
+}
 
 /* * {
   margin: 0;
@@ -90,6 +94,8 @@ p {
   font-family: Arial, Helvetica, sans-serif;
   box-sizing: border-box;
 } */
+
+/* footer */
 
 .footer {
   margin-top: 140px;

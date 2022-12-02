@@ -11,7 +11,6 @@
   margin-left: 5%;
 }
 .right-col {
-    
   flex-basis: 25%;
 }
 
@@ -84,15 +83,19 @@
 p {
   font-family: Arial, Helvetica, sans-serif;
 }
+.hotel-text {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 800px;
+}
 
 /* right box */
 .sidebar {
   border: 1px solid#999;
   padding: 20px 30px;
 }
-.sidebar{
-  font-weight h2: 500
-  ;
+.sidebar {
+  /* font-weight h2: 500
+  ; */
 }
 
 /* list of hotels ends */
@@ -125,7 +128,6 @@ p {
   flex-grow: 2;
   width: 34vw;
 }
-
 .col-1 {
   width: 33vw;
 }
