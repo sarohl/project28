@@ -5,15 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="booking.css" />
-    <script src="key.js" defer></script>
+    <script src="booking.js" defer></script>
     <title>Booking</title>
   </head>
+
+<body>
 
   <!-- Navigation bar starts here-->
 
   <div class="header">
     <nav id="navBar">
-      <a href="/home/index.html"><img src="logo.png" class="logo"></a>
+      <a href="/home/index.html"><img src="logo.png" class="logo" /></a>
       <ul class="nav-links">
         <li><a href="/aboutus/aboutus.html" class="active">About us</a></li>
         <li><a href="/hotels/hotels.html">Hotels</a></li>
@@ -21,25 +23,27 @@
         <li><a href="/aboutus/aboutus.html">Contacts</a></li>
       </ul>
       <div>
-        <img src="account.png" class="account">
-        <img src="cart.png" class="cart">
+        <img src="account.png" class="account" />
+        <img src="cart.png" class="cart" id="cart" />
+        <a href="/cart/cart.html">
+          <img src="/booking/cart1.png" id="cart1" height="35px"/>
+        </a>
       </div>
-      <img src="menu.png" class="menu" onclick="togglebtn()">
+      <img src="menu.png" class="menu" onclick="togglebtn()" />
     </nav>
   </div>
 
   <script>
     var navBar = document.getElementById("navBar");
 
-    function togglebtn(){
-            navBar.classList.toggle("hidemenu");
-      }
+    function togglebtn() {
+      navBar.classList.toggle("hidemenu");
+    }
   </script>
 
-<!-- Navigation bar ends here-->
+  <!-- Navigation bar ends here-->
 
-  <body>
-
+  
     <div class="container">
       <div class="container-form">
         <form action="#">
@@ -102,7 +106,6 @@
             </select>
           </div>
 
-
           <div class="container-form3">
             <h2 class="personaldetails">Your Personal Details</h2>
 
@@ -128,24 +131,21 @@
 
             <p>Special Requests</p>
             <div class="form-field">
-              <input type="text"/>
+              <input type="text" />
             </div>
           </div>
 
-          <button class="btn">Add to Cart</button>
+          <button id="btn" class="btn">Add to Cart</button>
         </form>
       </div>
 
       <div class="container-pic">
-        <h3>Sunrise Hotel ⭐️⭐️⭐️</h3>
-        <img src="hotel.jpg" height="600px" class="hotel-pic"/>
+        <h3>Beach Hotel ⭐️⭐️⭐️⭐️</h3>
+        <img src="hotel.jpg" height="600px" class="hotel-pic" />
       </div>
     </div>
   </body>
 </html>
-
-
-
 
 <!-- 
   References: https://www.youtube.com/watch?v=ShpH_1EPox0&t=306s -->
