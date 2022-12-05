@@ -8,6 +8,68 @@
     "filter ";
 } */
 
+/* navbar */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 7%;
+  background-color: #f2f0e7;
+}
+
+.logo {
+  height: 70px;
+  cursor: pointer;
+}
+
+.account {
+  height: 30px;
+  cursor: pointer;
+  margin-right: 2vw;
+}
+
+.cart {
+  height: 30px;
+  cursor: pointer;
+}
+
+.menu {
+  height: 30px;
+}
+
+.nav-links li {
+  list-style: none;
+  display: inline-block;
+  margin: 10px 30px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.active {
+  position: relative;
+}
+
+.active::after {
+  content: " ";
+  background: rgb(255, 255, 255);
+  width: 25px;
+  height: 2px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -12px;
+  border-radius: 2px;
+}
+
+nav .menu {
+  display: none;
+}
+
+/* navbar ends */
+
 /* list of hotels */
 .list-container {
   margin-top: 50px;
