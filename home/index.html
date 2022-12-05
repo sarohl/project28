@@ -1,52 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="main.css" />
-    <title>Egypt Packages</title>
-  </head>
-  <body>
-    <script src="main.js" defer></script>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-    <!-- Navbar -->
-    <header class="navbar">
-      <!-- <h1>Egypt Packages</h1>> -->
-      <img src="logo.png" width="60px" />
+<!-- Navigation bar starts here-->
+
+  <div class="header">
+    <nav id="navBar">
+      <a href="/home/index.html"><img src="logo.png" class="logo"></a>
+      <ul class="nav-links">
+        <li><a href="/aboutus/aboutus.html" class="active">About us</a></li>
+        <li><a href="/hotels/hotels.html">Hotels</a></li>
+        <li><a href="/activites/activities.html">Activities</a></li>
+        <li><a href="/aboutus/aboutus.html">Contacts</a></li>
+      </ul>
       <div>
-        <ul>
-          <li><a href="index.html"> About us </a></li>
-          <li><a href="/hotels/hotels.html">Hotels</a></li>
-          <li><a href="/activities/activities.html">Activities</a></li>
-          <li><a href="/contacts/contacts.html">Contacts</a></li>
-          <li><img src="account.png" width="40px" /></li>
-          <li><img src="cart.png" width="40px" /></li>
-
-          <!-- <li><input class="input-field" placeholder="🔎Search bar"></input></li> -->
-        </ul>
-      
-
-    </header>
-
-    <img src="homebackground.jpg" width="100%" />
-
-
-    
-    <div class="container">
-      <div>
-        <a href="/hotels/hotels.html">
-          <img src="hotels.jpg" height="200px" class="hotel"/>
-          <h2>Hotels</h2> 
-        </a>
+        <img src="account.png" class="account">
+        <img src="cart.png" class="cart">
       </div>
-      <div>
-        <a href="/activities/activities.html">
-          <img src="activities.jpg" height="200px" class="activities"/>
-          <h2>Activities</h2>
-        </a>
-      </div>
+      <img src="menu.png" class="menu" onclick="togglebtn()">
+    </nav>
   </div>
 
-  </body>
+  <script>
+    var navBar = document.getElementById("navBar");
+
+    function togglebtn(){
+            navBar.classList.toggle("hidemenu");
+      }
+  </script>
+
+<!-- Navigation bar ends here-->
+
+
+  <div class="container">
+    <div class="hotel-container">
+      <a href="/hotels/hotels.html">
+        <img src="hotels.jpg" height="200px" class="hotel" />
+        <h2>Hotels</h2>
+      </a>
+    </div>
+    <div class="activities-container">
+      <a href="/activities/activities.html">
+        <img src="activities.jpg" height="200px" class="activities" />
+        <h2>Activities</h2>
+      </a>
+    </div>
+  </div>
+
+</body>
 </html>
+
+
+<!-- References: https://www.youtube.com/watch?v=WuWbunhmDsE -->
+
+

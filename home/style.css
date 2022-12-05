@@ -1,5 +1,18 @@
-.container {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(homebackground.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 /* Navigation bar starts here*/
@@ -115,59 +128,30 @@ nav .menu {
   .activities {
     margin-top: 20px;
   }
+
+  
 }
 
 /* Navigation bar ends here*/
+
+.hotel {
+  border-radius: 50%;
+}
+
+.activities {
+  border-radius: 50%;
+}
+
 .container {
-  margin: 100px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-}
-
-.container-form {
-  padding: 5px;
-  margin: 0 auto;
-}
-
-.hotel-pic {
-  border-radius: 12px;
-}
-
-form {
-  display: grid;
-  grid-row-gap: 10px;
-}
-
-.form-field {
   display: flex;
-  height: 20px;
-  align-items: baseline;
+  justify-content: center;
+  margin-top: 40px;
+  text-align: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
-input,
-select {
-  padding: 5px 10px;
-}
-
-.btn {
-  border-radius: 5px;
-  width: 150px;
-  padding: 3px 10px;
-  box-shadow: 7px 10px 12px rgb(93, 93, 93);
-  margin-top: 30px;
-}
-
-.btn:hover {
-  transform: scale(1.03);
-  box-shadow: 10px 12px 14px rgb(93, 93, 93);
-}
-
-@media only screen and (max-width: 700px) {
-  .container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    margin: auto;
-  }
+.container h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 10px;
 }
