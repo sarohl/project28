@@ -14,6 +14,33 @@
   <body>
     <script src="hotels.js" defer></script>
 
+    <!--navbar -->
+    <div class="header">
+      <nav id="navBar">
+        <a href="/home/index.html"><img src="logo.png" class="logo"></a>
+        <ul class="nav-links">
+          <li><a href="/aboutus/aboutus.html" class="active">About us</a></li>
+          <li><a href="/hotels/hotels.html">Hotels</a></li>
+          <li><a href="/activites/activities.html">Activities</a></li>
+          <li><a href="/aboutus/aboutus.html">Contacts</a></li>
+        </ul>
+        <div>
+          <img src="account.png" class="account">
+          <img src="cart.png" class="cart">
+        </div>
+        <img src="menu.png" class="menu" onclick="togglebtn()">
+      </nav>
+    </div>
+  
+    <script>
+      var navBar = document.getElementById("navBar");
+  
+      function togglebtn(){
+              navBar.classList.toggle("hidemenu");
+        }
+    </script>
+<!--nav bar end-->
+
     <!-- list of hotels -->
     <div class="list-container">
       <div class="left-col">
@@ -129,30 +156,21 @@
             </div>
           </div>
         </div>
-
-        <!-- <div class="right-col">
+      </div>
+      <div class="right-col">
         <div class="sidebar">
-          <h2>Select Filters</h2>
+          <h2>Select Filter</h2>
           <h3>Property Type</h3>
+
           <div class="filter">
             <input type="checkbox" />
-            <p>Relax get away</p>
-            <span>(0)</span>
+            <p>House</p>
             <div class="filter">
               <input type="checkbox" />
-              <p>Traveling with kids</p>
-              <span>(0)</span>
-              <div class="filter">
-                <input type="checkbox" />
-                <p>For the adventures</p>
-                <span>(0)</span>
-                <div class="filter">
-                  <input type="checkbox" />
-                  <p>Quiet get away</p>
-                  <span>(0)</span>
+
+              
           </div>
         </div>
-      </div> -->
       </div>
     </div>
 
