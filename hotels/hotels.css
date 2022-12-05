@@ -1,3 +1,13 @@
+/* content {
+  grid-area: content;
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 2fr 2fr 2fr;
+  grid-template-rows: 0.5rem 2fr 2fr;
+  grid-template-areas:
+    ". . . ."
+    "filter ";
+} */
+
 /* list of hotels */
 .list-container {
   margin-top: 50px;
@@ -7,11 +17,16 @@
 }
 
 .left-col {
-  flex-basis: 55%;
+  flex-basis: 45%;
   margin-left: 5%;
+  position: relative;
 }
 .right-col {
-  flex-basis: 35%;
+  margin-right: 150px;
+  position: relative;
+  flex-basis: 45%;
+  /* margin-left: 40%;
+  margin-top: -100%; */
 }
 
 .left-col h1 {
@@ -81,9 +96,9 @@
   font-weight: 400;
 }
 
-p {
+/* p {
   font-family: Arial, Helvetica, sans-serif;
-}
+} */
 .hotel-text {
   font-family: "Times New Roman", Times, serif;
   font-size: large;
@@ -93,12 +108,19 @@ p {
 
 /* right box */
 .sidebar {
-  border: 1px solid#999;
-  padding: 20px 30px;
+  border: 1px solid #999;
+  padding: 20px 20px;
+  margin-top: 10px;
 }
-.sidebar {
-  /* font-weight h2: 500
-  ; */
+.sidebar h2 {
+  font-weight: 500;
+  font-size: medium;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.sidebar h3 {
+  font-weight: 500;
+  margin: 20px 0 10px;
+  font-size: medium;
 }
 
 /* list of hotels ends */
