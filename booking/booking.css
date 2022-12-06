@@ -126,6 +126,7 @@ nav .menu {
 }
 
 /* Navigation bar ends here*/
+
 .container {
   margin: 100px;
   display: grid;
@@ -133,9 +134,25 @@ nav .menu {
   grid-template-rows: 1fr;
 }
 
+.adults-box {
+  margin-right: 25px;
+}
+
+.special-requests {
+  width: 300px;
+  height: 100px;
+}
+
+.title {
+  margin-right: 10px;
+}
+
 .container-form {
   padding: 5px;
   margin: 0 auto;
+}
+.container-form1 {
+  margin-bottom: 30px;
 }
 
 .hotel-pic {
@@ -151,6 +168,7 @@ form {
   display: flex;
   height: 20px;
   align-items: baseline;
+  margin-bottom: 30px;
 }
 
 input,
@@ -163,7 +181,7 @@ select {
   width: 150px;
   padding: 3px 10px;
   box-shadow: 7px 10px 12px rgb(93, 93, 93);
-  margin-top: 30px;
+  margin-top: 100px;
 }
 
 .btn:hover {
