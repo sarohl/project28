@@ -78,27 +78,25 @@ i {
   font-size: 20px;
   margin: 10px 1px;
 }
+
+i2 {
+  color: #f6be19;
+  font-size: 18px;
+  margin: 10px 0.1px;
+  width: 18px;
+}
+
 /* content 1 ends */
 
 /* content 2*/
-/* .bookbutton {
-  height: 20px;
-  width: 100px;
-  font-size: 15px;
-  background-color: #c4c4c4;
-  padding: 5px;
-  color: rgb(0, 0, 0);
-  border-radius: 3px;
-  text-align: center;
-  padding-top: 11px;
-} */
 .book-now {
-  font-size: 18px;
+  font-size: 16px;
   text-align: center;
   padding: 6px 19px;
   border-radius: 9px;
+  color: #010101;
+  background-color: rgba(151, 150, 150, 0.358);
 }
-
 /* content 2 ends */
 
 .hotel-pic {

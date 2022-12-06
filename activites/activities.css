@@ -58,9 +58,62 @@ nav .menu {
   display: none;
 }
 
-/* navbar ends */
+/* For mobile version */
+@media only screen and (max-width: 700px) {
+  .logo {
+    position: fixed;
+    top: 4%;
+    left: 7%;
+  }
+  nav {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    display: inline-block;
+    width: 100%;
+    padding: 100px 7% 0;
+    background: rgb(242, 240, 231);
+    text-align: right;
+    max-height: 100px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+    font-size: 22px;
+  }
+  nav .nav-links li {
+    margin: 10px 0;
+    display: block;
+  }
+  .account {
+    margin: 15px 0 30px;
+    display: inline-block;
+  }
+  .cart {
+    margin: 15px 0 30px;
+    display: inline-block;
+  }
+  nav .menu {
+    display: block;
+    position: fixed;
+    top: 3%;
+    right: 7%;
+  }
+  .active::after {
+    left: -40px;
+    transform: translate(0, 50%);
+    bottom: 50%;
+    border-radius: 2px;
+  }
+  .hidemenu {
+    max-height: 350px;
+  }
 
-/* list of hotels */
+  .activities {
+    margin-top: 20px;
+  }
+}
+/* Navigation bar ends here*/
+
+/* list of activities */
 .list-container {
   margin-top: 50px;
   display: flex;
@@ -152,6 +205,7 @@ p {
   width: 800px;
   letter-spacing: 0.2px;
 }
+/* activites-list ends */
 
 /* * {
   margin: 0;
@@ -161,7 +215,6 @@ p {
 } */
 
 /* footer */
-
 .footer {
   margin-top: 140px;
   max-width: 100%;
@@ -231,5 +284,4 @@ form button {
   margin: 10px;
   cursor: pointer;
 }
-
 /* footer end */

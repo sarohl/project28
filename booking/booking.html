@@ -6,44 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="booking.css" />
     <script src="booking.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/bf1e44629f.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Booking</title>
   </head>
 
-<body>
+  <body>
+    <!-- Navigation bar starts here-->
 
-  <!-- Navigation bar starts here-->
+    <div class="header">
+      <nav id="navBar">
+        <a href="/home/index.html"><img src="logo.png" class="logo" /></a>
+        <ul class="nav-links">
+          <li><a href="/aboutus/aboutus.html" class="active">About us</a></li>
+          <li><a href="/hotels/hotels.html">Hotels</a></li>
+          <li><a href="/activites/activities.html">Activities</a></li>
+          <li><a href="/aboutus/aboutus.html">Contacts</a></li>
+        </ul>
+        <div>
+          <img src="account.png" class="account" />
+          <img src="cart.png" class="cart" id="cart" />
+          <a href="/cart/cart.html">
+            <img src="cart1.png" id="cart1" height="35px" />
+          </a>
+        </div>
+        <img src="menu.png" class="menu" onclick="togglebtn()" />
+      </nav>
+    </div>
 
-  <div class="header">
-    <nav id="navBar">
-      <a href="/home/index.html"><img src="logo.png" class="logo" /></a>
-      <ul class="nav-links">
-        <li><a href="/aboutus/aboutus.html" class="active">About us</a></li>
-        <li><a href="/hotels/hotels.html">Hotels</a></li>
-        <li><a href="/activites/activities.html">Activities</a></li>
-        <li><a href="/aboutus/aboutus.html">Contacts</a></li>
-      </ul>
-      <div>
-        <img src="account.png" class="account" />
-        <img src="cart.png" class="cart" id="cart" />
-        <a href="/cart/cart.html">
-          <img src="/booking/cart1.png" id="cart1" height="35px"/>
-        </a>
-      </div>
-      <img src="menu.png" class="menu" onclick="togglebtn()" />
-    </nav>
-  </div>
+    <script>
+      var navBar = document.getElementById("navBar");
 
-  <script>
-    var navBar = document.getElementById("navBar");
+      function togglebtn() {
+        navBar.classList.toggle("hidemenu");
+      }
+    </script>
 
-    function togglebtn() {
-      navBar.classList.toggle("hidemenu");
-    }
-  </script>
+    <!-- Navigation bar ends here-->
 
-  <!-- Navigation bar ends here-->
-
-  
     <div class="container">
       <div class="container-form">
         <form action="#">
@@ -140,7 +142,14 @@
       </div>
 
       <div class="container-pic">
-        <h3>Beach Hotel ⭐️⭐️⭐️⭐️</h3>
+        <h3>
+          Beach Hotel
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </h3>
         <img src="hotel.jpg" height="600px" class="hotel-pic" />
       </div>
     </div>
