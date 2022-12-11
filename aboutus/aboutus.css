@@ -1,8 +1,16 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Times New Roman', Times, serif
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif
 }
 
 /* Navigation bar starts here*/
+
+.header {
+  font-family: Arial, Helvetica, sans-serif;
+}
 
 nav {
   display: flex;
@@ -183,10 +191,12 @@ h2 {
   text-align: center;
   margin-bottom: 4vh;
   margin-top: 15vh;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 h5 {
   font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 @media only screen and (max-width: 700px) {

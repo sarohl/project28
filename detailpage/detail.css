@@ -90,13 +90,21 @@ i2 {
 
 /* content 2*/
 .book-now {
-  font-size: 16px;
-  text-align: center;
-  padding: 6px 19px;
-  border-radius: 9px;
-  color: #010101;
-  background-color: rgba(151, 150, 150, 0.358);
+  background-color: transparent;
+  border: 2px solid rgba(0, 0, 0, 0.469);
+  color: rgb(0, 0, 0);
+  border-radius: 30px;
+  padding: 10px 30px;
+  font-size: 15px;
+  cursor: pointer;
+  
 }
+
+.book-now:hover {
+  transform: scale(1.02);
+  box-shadow: 5px 5px 5px rgba(138, 138, 138, 0.692);
+}
+
 /* content 2 ends */
 
 .hotel-pic {
@@ -191,6 +199,11 @@ form button {
   padding: 10px 30px;
   font-size: 15px;
   cursor: pointer;
+}
+
+form button:hover {
+  transform: scale(1.02);
+  box-shadow: 5px 5px 5px rgba(138, 138, 138, 0.692);
 }
 
 .social-icons {

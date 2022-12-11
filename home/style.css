@@ -17,6 +17,10 @@
 
 /* Navigation bar starts here*/
 
+#navBar {
+  width: 100%;
+}
+
 nav {
   display: flex;
   align-items: center;
